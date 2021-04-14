@@ -1,10 +1,11 @@
+//@ts-check
 vim = {
-    "mode": "insert", // Keep track of current mode
-    "num": "", // Keep track of number keys pressed by the user
-    "currentSequence": "", // Keep track of key sequences
-    "keys": {
-        "move": "dhtn", // QWERTY: hjkl
-        "escapeSequence": "hn", // QWERTY: jk or jl
+    mode: "insert", // Keep track of current mode
+    num: "", // Keep track of number keys pressed by the user
+    currentSequence: "", // Keep track of key sequences
+    keys: {
+        "move": "hjkl", // QWERTY: hjkl
+        "escapeSequence": "jk", // QWERTY: jk or jl
     }
 };
 
@@ -36,6 +37,22 @@ vim.switchToInsertMode = function () {
     docs.setCursorWidth("2px");
 };
 
+vim.moveTo = function (type) {
+    const selectedType = type.toUpperCase();
+    switch (selectedType) {
+        case "HOME":
+            docs.pressKey(36, false, false);
+            vim.switchToInsertMode();
+            break;
+        case "END":
+            docs.pressKey(35, false, false);
+            vim.switchToInsertMode();
+            break;
+        default:
+            break;
+    }
+};
+
 // Called in normal mode.
 vim.normal_keydown = function (e) {
     if (e.key.match(/F\d+/)) {
@@ -48,6 +65,23 @@ vim.normal_keydown = function (e) {
 
     if (e.key == "i") {
         vim.switchToInsertMode();
+        return true;
+    }
+
+    if (e.key == "I") {
+        vim.switchToInsertMode();
+        vim.moveTo('Home');
+        return true;
+    }
+
+    if (e.key == "a") {
+        vim.switchToInsertMode();
+        return true;
+    }
+
+    if (e.key == "A") {
+        vim.switchToInsertMode();
+        vim.moveTo('End');
         return true;
     }
 
