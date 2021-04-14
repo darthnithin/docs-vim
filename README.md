@@ -26,7 +26,7 @@ Currently supported features:
 * Chrome (tested on 63.0)
 * (Not really) Firefox
     * It will install, but many of the features work incorrectly.
-    
+
 ## How?
 Glad you asked - this project is built with the [docs-plus
 library](https://github.com/matthewsot/docs-plus), which enables rich
@@ -39,10 +39,15 @@ Currently set up to work with my DVORAK layout, these are the default keybinding
 
 * Insert Mode:
     * Esc: enter normal mode
-    * hn: enter normal mode
+    * hn: enter normal mode (dvorak)
+    * jk: enter normal mode (qwerty)
 * Normal Mode:
     * i: enter insert mode
-    * dhtn: move
+    * I: enter insert mode from home
+    * a: enter insert mode
+    * A: enter insert mode from end
+    * dhtn: move (dvorak)
+    * hjkl: move (qwerty)
 
 Note that most of these can be changed in ``docs-vim.js``. For example, if you
 want to use the more common QWERTY keybindings, you'd change to:

@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Docs-Vim",
-  "version": "0.01",
+  "version": "0.0.2",
 
   "applications": {
     "gecko": {
