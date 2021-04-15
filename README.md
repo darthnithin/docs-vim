@@ -46,6 +46,8 @@ Currently set up to work with my DVORAK layout, these are the default keybinding
     * I: enter insert mode from home
     * a: enter insert mode
     * A: enter insert mode from end
+    * o: enter new line with insert mode
+    * O: enter new line with insert mode
     * dhtn: move (dvorak)
     * hjkl: move (qwerty)
 
