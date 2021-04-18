@@ -40,14 +40,23 @@ vim.switchToInsertMode = function () {
 vim.moveTo = function (type) {
 	const selectedType = type.toUpperCase();
 	switch (selectedType) {
-		case 'HOME':
-			docs.pressKey(36, false, false);
-			break;
 		case 'END':
 			docs.pressKey(35, false, false);
 			break;
+		case 'HOME':
+			docs.pressKey(36, false, false);
+			break;
+		case 'LEFT':
+			docs.pressKey(37, false, false);
+			break;
 		case 'UP':
 			docs.pressKey(38, false, false);
+			break;
+		case 'RIGHT':
+			docs.pressKey(39, false, false);
+			break;
+		case 'DOWN':
+			docs.pressKey(40, false, false);
 			break;
 		default:
 			break;
@@ -80,6 +89,7 @@ vim.normal_keydown = function (e) {
 	}
 
 	if (e.key == 'a') {
+		vim.moveTo('Right');
 		vim.switchToInsertMode();
 		return true;
 	}
