@@ -227,6 +227,10 @@ vim.insert_keydown = function (e) {
 };
 
 docs.keydown = function (e) {
+	// pass thru meta key combination
+	if (e.key == 'Meta' || e.metaKey) {
+		return true;
+	}
 	if (vim.mode == 'insert') {
 		return vim.insert_keydown(e);
 	}
