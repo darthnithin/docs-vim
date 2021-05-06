@@ -115,6 +115,16 @@ vim.normal_keydown = function (e) {
 		return true;
 	}
 
+	if (e.key == '$') {
+		vim.moveTo('End');
+		return true;
+	}
+
+	if (e.key == '0' || e.key =='^') {
+		vim.moveTo('Home');
+		return true;
+	}
+
 	if (e.key == 'v') {
 		vim.switchToVisualMode();
 		return true;
