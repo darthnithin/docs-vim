@@ -1,7 +1,7 @@
 # docs-vim
 ## Cloning Instructions
 This repository uses ``git submodule``, after cloning it you should run ``git
-submodule init`` and ``git submodule update``.
+submodule init`` and ``git submodule update``. Also uses web-ext so install that with npm.
 
 ## Overview
 This simulates very limited versions of vim's insert and normal modes on Google

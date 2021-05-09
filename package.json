@@ -1,0 +1,26 @@
+{
+  "name": "docs-vim",
+  "version": "1.0.0",
+  "description": "This repository uses ``git submodule``, after cloning it you should run ``git\r submodule init`` and ``git submodule update``.",
+  "main": "docs-vim.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "web-ext run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darthnithin/docs-vim.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darthnithin/docs-vim/issues"
+  },
+  "homepage": "https://github.com/darthnithin/docs-vim#readme",
+  "devDependencies": {
+    "web-ext": "^6.1.0"
+  }
+}
