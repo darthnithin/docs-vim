@@ -1,3 +1,6 @@
 *.sw*
 *.zip
+*.xpi
 node_modules
+*.env
+src/.web-extension-id

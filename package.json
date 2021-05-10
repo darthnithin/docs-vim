@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/darthnithin/docs-vim#readme",
   "devDependencies": {
+    "dotenv": "^9.0.1",
     "web-ext": "^6.1.0"
   }
 }
