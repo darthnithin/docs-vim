@@ -1,7 +1,5 @@
 # docs-vim
-## Cloning Instructions
-This repository uses ``git submodule``, after cloning it you should run ``git
-submodule init`` and ``git submodule update``. Also uses web-ext so install that with npm.
+Firefox extention that enables VIM-like keybinds and modes in google docs.
 
 ## Overview
 This simulates very limited versions of vim's insert and normal modes on Google
@@ -66,10 +64,6 @@ vim = {
 
 Near the top of ``docs-vim.js``.
 
-## Future Features
-I don't really use all that much of vim's shortcuts, but a few particular things I want to add
-eventually:
-
-* Selections with shift-V (visual line mode)
-* Command mode with find and replace, go to line #, etc.
-* Quick find with /
+## Cloning Instructions
+This repository uses ``git submodule``, after cloning it you should run ``git
+submodule init`` and ``git submodule update``. Also uses web-ext so install that with npm.
