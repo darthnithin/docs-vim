@@ -1,5 +1,5 @@
 # docs-vim
-Firefox extention that enables VIM-like keybinds and modes in google docs.
+Firefox extention that enables [VIM-like](https://www.openvim.com/) keybinds and modes in google docs.
 
 ## Overview
 This simulates very limited versions of vim's insert and normal modes on Google
